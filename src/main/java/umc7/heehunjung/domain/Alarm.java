@@ -13,9 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.apache.el.parser.AstFalse;
 import umc7.heehunjung.domain.common.BaseEntity;
-
 
 @Entity
 @Getter
@@ -37,10 +35,10 @@ public class Alarm extends BaseEntity {
     @Column(nullable = false, length = 20)
     private String body;
 
+    @Builder.Default
     private boolean isConfirmed = false;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
-
 }
