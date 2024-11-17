@@ -2,8 +2,8 @@ package umc7.heehunjung.web.converter;
 
 import umc7.heehunjung.domain.Region;
 import umc7.heehunjung.domain.Restaurant;
-import umc7.heehunjung.web.dto.RestaurantRequestDto;
-import umc7.heehunjung.web.dto.RestaurantResponseDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;
 
 public class RestaurantConverter {
 

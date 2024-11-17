@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.dto;
+package umc7.heehunjung.web.dto.restaurant;
 
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
