@@ -9,8 +9,8 @@ import umc7.heehunjung.apiPayload.ApiResponse;
 import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.service.RestaurantService.RestaurantCommandService;
 import umc7.heehunjung.web.converter.RestaurantConverter;
-import umc7.heehunjung.web.dto.RestaurantRequestDto;
-import umc7.heehunjung.web.dto.RestaurantResponseDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;
 
 @RestController
 @RequiredArgsConstructor

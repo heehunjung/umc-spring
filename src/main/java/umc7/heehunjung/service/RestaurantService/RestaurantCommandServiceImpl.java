@@ -7,7 +7,7 @@ import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.repository.RegionRepository;
 import umc7.heehunjung.repository.RestaurantRepository;
 import umc7.heehunjung.web.converter.RestaurantConverter;
-import umc7.heehunjung.web.dto.RestaurantRequestDto.addDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto.addDto;
 
 @Service
 @RequiredArgsConstructor
