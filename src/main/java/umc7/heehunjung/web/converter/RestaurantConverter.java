@@ -3,12 +3,12 @@ package umc7.heehunjung.web.converter;
 import umc7.heehunjung.domain.Region;
 import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto;
-import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;
+import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto.Add;
 
 public class RestaurantConverter {
 
-    public static RestaurantResponseDto.addDTO toAddDTO(Restaurant restaurant) {
-        return RestaurantResponseDto.addDTO.builder()
+    public static Add toAddDTO(Restaurant restaurant) {
+        return Add.builder()
                 .restaurantId(restaurant.getId())
                 .createAt(restaurant.getCreatedAt())
                 .build();

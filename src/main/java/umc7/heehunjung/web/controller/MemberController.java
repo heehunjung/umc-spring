@@ -1,8 +1,6 @@
 package umc7.heehunjung.web.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -23,7 +21,7 @@ import umc7.heehunjung.web.dto.member.MemberResponseDTO;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/member")
-public class MemberRestController {
+public class MemberController {
 
     private final MemberQueryService memberQueryService;
 

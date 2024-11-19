@@ -1,6 +1,7 @@
 package umc7.heehunjung.web.dto.restaurant;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,8 +13,27 @@ public class RestaurantResponseDto {
     @Getter
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class addDTO {
+    public static class Add {
             Long restaurantId;
             LocalDateTime createAt;
+    }
+
+    @Builder
+    @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Mission {
+        String missionName;
+        String restaurantName;
+        String description;
+        int point;
+    }
+
+    @Builder
+    @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class MissionList {
+        List<Mission> Missions;
     }
 }
