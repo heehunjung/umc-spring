@@ -1,22 +1,16 @@
-package umc7.heehunjung.service.MemberMissionService;
+package umc7.heehunjung.service.memberMissionService;
 
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.Mission;
-import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.domain.mapping.MemberMission;
-import umc7.heehunjung.domain.mapping.Review;
 import umc7.heehunjung.repository.MemberMissionRepository;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.MissionRepository;
-import umc7.heehunjung.repository.RestaurantRepository;
-import umc7.heehunjung.repository.ReviewRepository;
 import umc7.heehunjung.web.converter.MemberMissionConverter;
-import umc7.heehunjung.web.converter.ReviewConverter;
 import umc7.heehunjung.web.dto.mission.MissionRequestDto.addMissionRequestDto;
-import umc7.heehunjung.web.dto.review.ReviewRequestDto.addReviewDto;
 
 @Service
 @RequiredArgsConstructor

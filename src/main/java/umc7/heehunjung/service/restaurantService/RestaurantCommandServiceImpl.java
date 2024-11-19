@@ -1,4 +1,4 @@
-package umc7.heehunjung.service.RestaurantService;
+package umc7.heehunjung.service.restaurantService;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

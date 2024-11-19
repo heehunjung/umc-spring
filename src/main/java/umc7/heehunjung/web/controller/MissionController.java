@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import umc7.heehunjung.apiPayload.ApiResponse;
 import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.repository.MissionRepository;
-import umc7.heehunjung.service.MemberMissionService.MemberMissionCommandService;
+import umc7.heehunjung.service.memberMissionService.MemberMissionCommandService;
 import umc7.heehunjung.web.converter.MemberMissionConverter;
 import umc7.heehunjung.web.dto.MemberMissionResponseDto;
 import umc7.heehunjung.web.dto.mission.MissionRequestDto;
-import umc7.heehunjung.web.dto.mission.MissionResponseDto;
 
 @RestController
 @RequiredArgsConstructor
