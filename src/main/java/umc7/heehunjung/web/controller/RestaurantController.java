@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import umc7.heehunjung.apiPayload.ApiResponse;
 import umc7.heehunjung.domain.Restaurant;
-import umc7.heehunjung.service.RestaurantService.RestaurantCommandService;
+import umc7.heehunjung.service.restaurantService.RestaurantCommandService;
 import umc7.heehunjung.web.converter.RestaurantConverter;
 import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto;
 import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;

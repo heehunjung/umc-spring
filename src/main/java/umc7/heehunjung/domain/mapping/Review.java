@@ -32,6 +32,8 @@ public class Review extends BaseEntity {
     @Column(nullable = false, length = 20)
     private String body;
 
+    private int score;
+
     @ManyToOne
     @JoinColumn(name = "member_id")  // 외래 키 설정
     private Member member;

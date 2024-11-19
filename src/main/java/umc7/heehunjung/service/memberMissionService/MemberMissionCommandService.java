@@ -1,8 +1,7 @@
-package umc7.heehunjung.service.MemberMissionService;
+package umc7.heehunjung.service.memberMissionService;
 
 import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.web.dto.mission.MissionRequestDto;
-import umc7.heehunjung.web.dto.review.ReviewRequestDto;
 
 public interface MemberMissionCommandService {
 
