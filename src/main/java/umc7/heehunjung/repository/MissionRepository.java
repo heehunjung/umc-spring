@@ -1,7 +1,6 @@
 package umc7.heehunjung.repository;
 
 import java.util.List;
-import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import umc7.heehunjung.domain.Mission;
 import umc7.heehunjung.domain.Restaurant;

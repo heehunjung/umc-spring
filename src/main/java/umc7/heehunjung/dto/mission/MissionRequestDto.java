@@ -5,8 +5,9 @@ import lombok.Getter;
 public class MissionRequestDto {
 
     @Getter
-    public static class addMissionRequestDto {
+    public static class MemberMissionDto {
         Long memberId;
         Long missionId;
     }
+
 }
