@@ -4,11 +4,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import umc7.heehunjung.domain.Mission;
 import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.repository.MissionRepository;
 import umc7.heehunjung.repository.RestaurantRepository;
-import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;
+import umc7.heehunjung.dto.restaurant.RestaurantResponseDto;
 
 @Service
 @RequiredArgsConstructor

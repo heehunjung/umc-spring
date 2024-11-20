@@ -9,8 +9,8 @@ import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.repository.MemberMissionRepository;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.MissionRepository;
-import umc7.heehunjung.web.converter.MemberMissionConverter;
-import umc7.heehunjung.web.dto.mission.MissionRequestDto.addMissionRequestDto;
+import umc7.heehunjung.converter.MemberMissionConverter;
+import umc7.heehunjung.dto.mission.MissionRequestDto.MemberMissionDto;
 
 @Service
 @RequiredArgsConstructor
@@ -22,7 +22,7 @@ public class MemberMissionCommandServiceImpl implements MemberMissionCommandServ
     private final MemberMissionRepository memberMissionRepository;
 
     @Override
-    public MemberMission addMissionToMember(addMissionRequestDto requestDto) {
+    public MemberMission addMissionToMember(MemberMissionDto requestDto) {
         Optional<Member> memberOptional = memberRepository.findById(requestDto.getMemberId());
         Optional<Mission> missionOptional = missionRepository.findById(requestDto.getMissionId());
 
