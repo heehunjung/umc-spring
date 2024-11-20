@@ -1,9 +1,14 @@
 package umc7.heehunjung.converter;
 
+import java.awt.print.Pageable;
 import java.util.List;
 import org.springframework.data.domain.Page;
+import umc7.heehunjung.domain.Member;
+import umc7.heehunjung.domain.Mission;
+import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.domain.mapping.Review;
 import umc7.heehunjung.dto.member.MemberResponseDTO;
+import umc7.heehunjung.dto.member.MemberResponseDTO.MissionList;
 
 public class MemberConverter {
 
@@ -29,6 +34,32 @@ public class MemberConverter {
                 .totalElements(reviewList.getTotalElements())
                 .listSize(reviewPreViewDTOList.size())
                 .reviewLists(reviewPreViewDTOList)
+                .build();
+    }
+
+    public static MemberResponseDTO.MissionInfo missionInfoDTO(MemberMission mission) {
+
+        return MemberResponseDTO.MissionInfo
+                .builder()
+                .missionDescription(mission.getMission().getMissionDescription())
+                .point(mission.getPoint())
+                .name(mission.getMission().getRestaurant().getName())
+                .build();
+    }
+
+    public static MemberResponseDTO.MissionList MissionListDTO(Page<MemberMission> list) {
+
+        List<MemberResponseDTO.MissionInfo> missionInfoList = list.stream()
+                .map(MemberConverter::missionInfoDTO)
+                .toList();
+
+        return MemberResponseDTO.MissionList.builder()
+                .missionList(missionInfoList)
+                .isLast(list.isLast())
+                .isFirst(list.isFirst())
+                .totalPage(list.getTotalPages())
+                .totalElements(list.getTotalElements())
+                .listSize(missionInfoList.size())
                 .build();
     }
 }
