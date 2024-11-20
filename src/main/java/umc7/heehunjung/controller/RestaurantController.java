@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.controller;
+package umc7.heehunjung.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -15,11 +15,10 @@ import umc7.heehunjung.apiPayload.ApiResponse;
 import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.service.restaurantService.RestaurantCommandService;
 import umc7.heehunjung.service.restaurantService.RestaurantQueryService;
-import umc7.heehunjung.web.converter.RestaurantConverter;
-import umc7.heehunjung.web.dto.restaurant.RestaurantRequestDto;
-import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto;
-import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto.Add;
-import umc7.heehunjung.web.dto.restaurant.RestaurantResponseDto.Mission;
+import umc7.heehunjung.converter.RestaurantConverter;
+import umc7.heehunjung.dto.restaurant.RestaurantRequestDto;
+import umc7.heehunjung.dto.restaurant.RestaurantResponseDto;
+import umc7.heehunjung.dto.restaurant.RestaurantResponseDto.Add;
 
 @RestController
 @RequiredArgsConstructor

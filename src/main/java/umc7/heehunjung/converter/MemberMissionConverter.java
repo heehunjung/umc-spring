@@ -1,9 +1,9 @@
-package umc7.heehunjung.web.converter;
+package umc7.heehunjung.converter;
 
 import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.Mission;
 import umc7.heehunjung.domain.mapping.MemberMission;
-import umc7.heehunjung.web.dto.MemberMissionResponseDto;
+import umc7.heehunjung.dto.MemberMissionResponseDto;
 
 public class MemberMissionConverter {
     public static MemberMission toMemberMission(Mission mission, Member member) {

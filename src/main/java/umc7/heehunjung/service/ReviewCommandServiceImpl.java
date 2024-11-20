@@ -9,8 +9,8 @@ import umc7.heehunjung.domain.mapping.Review;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.RestaurantRepository;
 import umc7.heehunjung.repository.ReviewRepository;
-import umc7.heehunjung.web.converter.ReviewConverter;
-import umc7.heehunjung.web.dto.review.ReviewRequestDto.addReviewDto;
+import umc7.heehunjung.converter.ReviewConverter;
+import umc7.heehunjung.dto.review.ReviewRequestDto.addReviewDto;
 
 @Service
 @RequiredArgsConstructor

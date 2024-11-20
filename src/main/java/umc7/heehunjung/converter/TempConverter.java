@@ -1,6 +1,6 @@
-package umc7.heehunjung.web.converter;
+package umc7.heehunjung.converter;
 
-import umc7.heehunjung.web.dto.TempResponse;
+import umc7.heehunjung.dto.TempResponse;
 
 public class TempConverter {
 

@@ -1,7 +1,7 @@
-package umc7.heehunjung.web.converter;
+package umc7.heehunjung.converter;
 
 import umc7.heehunjung.domain.Mission;
-import umc7.heehunjung.web.dto.mission.MissionResponseDto;
+import umc7.heehunjung.dto.mission.MissionResponseDto;
 
 public class MissionConverter {
 

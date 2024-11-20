@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.dto.member;
+package umc7.heehunjung.dto.member;
 
 import java.time.LocalDateTime;
 import java.util.List;

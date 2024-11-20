@@ -1,9 +1,9 @@
-package umc7.heehunjung.web.converter;
+package umc7.heehunjung.converter;
 
 import java.util.List;
 import org.springframework.data.domain.Page;
 import umc7.heehunjung.domain.mapping.Review;
-import umc7.heehunjung.web.dto.member.MemberResponseDTO;
+import umc7.heehunjung.dto.member.MemberResponseDTO;
 
 public class MemberConverter {
 

@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.controller;
+package umc7.heehunjung.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -15,8 +15,8 @@ import umc7.heehunjung.apiPayload.ApiResponse;
 import umc7.heehunjung.domain.mapping.Review;
 import umc7.heehunjung.service.memberService.MemberQueryService;
 import umc7.heehunjung.validation.annotation.CheckPage;
-import umc7.heehunjung.web.converter.MemberConverter;
-import umc7.heehunjung.web.dto.member.MemberResponseDTO;
+import umc7.heehunjung.converter.MemberConverter;
+import umc7.heehunjung.dto.member.MemberResponseDTO;
 
 @RestController
 @RequiredArgsConstructor

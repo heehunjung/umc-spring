@@ -9,8 +9,8 @@ import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.repository.MemberMissionRepository;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.MissionRepository;
-import umc7.heehunjung.web.converter.MemberMissionConverter;
-import umc7.heehunjung.web.dto.mission.MissionRequestDto.addMissionRequestDto;
+import umc7.heehunjung.converter.MemberMissionConverter;
+import umc7.heehunjung.dto.mission.MissionRequestDto.addMissionRequestDto;
 
 @Service
 @RequiredArgsConstructor

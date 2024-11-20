@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.dto.restaurant;
+package umc7.heehunjung.dto.restaurant;
 
 import lombok.Getter;
 

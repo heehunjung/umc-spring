@@ -1,11 +1,10 @@
-package umc7.heehunjung.web.converter;
+package umc7.heehunjung.converter;
 
-import java.util.Optional;
 import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.Restaurant;
 import umc7.heehunjung.domain.mapping.Review;
-import umc7.heehunjung.web.dto.review.ReviewRequestDto.addReviewDto;
-import umc7.heehunjung.web.dto.review.ReviewResponseDto;
+import umc7.heehunjung.dto.review.ReviewRequestDto.addReviewDto;
+import umc7.heehunjung.dto.review.ReviewResponseDto;
 
 public class ReviewConverter {
 

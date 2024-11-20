@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.dto.mission;
+package umc7.heehunjung.dto.mission;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

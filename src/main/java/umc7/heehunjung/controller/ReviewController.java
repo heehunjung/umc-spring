@@ -1,22 +1,18 @@
-package umc7.heehunjung.web.controller;
+package umc7.heehunjung.controller;
 
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import umc7.heehunjung.apiPayload.ApiResponse;
-import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.mapping.Review;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.ReviewRepository;
 import umc7.heehunjung.service.ReviewCommandService;
-import umc7.heehunjung.service.ReviewCommandServiceImpl;
-import umc7.heehunjung.web.converter.ReviewConverter;
-import umc7.heehunjung.web.dto.review.ReviewRequestDto;
-import umc7.heehunjung.web.dto.review.ReviewResponseDto;
-import umc7.heehunjung.web.dto.review.ReviewResponseDto.addReviewResult;
+import umc7.heehunjung.converter.ReviewConverter;
+import umc7.heehunjung.dto.review.ReviewRequestDto;
+import umc7.heehunjung.dto.review.ReviewResponseDto.addReviewResult;
 
 @RestController
 @RequiredArgsConstructor

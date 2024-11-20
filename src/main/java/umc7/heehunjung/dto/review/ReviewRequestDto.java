@@ -1,4 +1,4 @@
-package umc7.heehunjung.web.dto.review;
+package umc7.heehunjung.dto.review;
 
 import lombok.Getter;
 
