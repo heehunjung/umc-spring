@@ -1,4 +1,4 @@
-package umc7.heehunjung.config;
+package umc7.heehunjung.config.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
