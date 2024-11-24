@@ -7,11 +7,22 @@ import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.Mission;
 import umc7.heehunjung.domain.mapping.MemberMission;
 import umc7.heehunjung.domain.mapping.Review;
+import umc7.heehunjung.dto.member.MemberRequestDTO;
 import umc7.heehunjung.dto.member.MemberResponseDTO;
 import umc7.heehunjung.dto.member.MemberResponseDTO.MissionList;
 
 public class MemberConverter {
 
+    public static Member toMember(MemberRequestDTO.JoinDto request) {
+        return Member.builder()
+                .name(request.getName())
+                .address(request.getAddress())
+                .gender(request.getGender())
+                .userId(request.getEmail())
+                .password(request.getPassword())
+                .role(request.getRole())
+                .build();
+    }
     public static MemberResponseDTO.ReviewInfoDTO reviewInfoDTO(Review review) {
         return MemberResponseDTO.ReviewInfoDTO.builder()
                 .name(review.getMember().getName())

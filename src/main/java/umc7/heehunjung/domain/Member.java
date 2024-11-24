@@ -51,6 +51,9 @@ public class Member extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private Status status;
 
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     @Builder.Default
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<MemberMission> memberMissions = new ArrayList<>();
@@ -62,4 +65,8 @@ public class Member extends BaseEntity {
     @OneToOne
     @JoinColumn(name = "region_id")
     private Region region;
+
+    public void encodePassword(String encodedPassword) {
+        this.password = encodedPassword;
+    }
 }

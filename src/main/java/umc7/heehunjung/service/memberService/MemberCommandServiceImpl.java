@@ -2,7 +2,9 @@ package umc7.heehunjung.service.memberService;
 
 import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import umc7.heehunjung.converter.MemberConverter;
 import umc7.heehunjung.domain.Member;
 import umc7.heehunjung.domain.Mission;
 import umc7.heehunjung.domain.MissionStatus;
@@ -20,6 +22,14 @@ public class MemberCommandServiceImpl implements MemberCommandService {
     private final MemberRepository memberRepository;
     private final MissionRepository missionRepository;
     private final MemberMissionRepository missionMissionRepository;
+    private final PasswordEncoder passwordEncoder;
+
+    @Override
+    public void joinMember(MemberRequestDTO.JoinDto request){
+        Member newMember = MemberConverter.toMember(request);
+        newMember.encodePassword(passwordEncoder.encode(request.getPassword()));
+        memberRepository.save(newMember);
+    }
 
     @Override
     public MemberMissionDto updateMission(MemberRequestDTO.MemberMissionDto missionDto) {

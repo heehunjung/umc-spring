@@ -5,4 +5,5 @@ import umc7.heehunjung.dto.member.MemberResponseDTO;
 
 public interface MemberCommandService {
         MemberResponseDTO.MemberMissionDto updateMission(MemberRequestDTO.MemberMissionDto missionDto);
+        void joinMember(MemberRequestDTO.JoinDto request);
 }
