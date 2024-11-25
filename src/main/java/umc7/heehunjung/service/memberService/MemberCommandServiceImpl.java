@@ -2,6 +2,7 @@ package umc7.heehunjung.service.memberService;
 
 import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import umc7.heehunjung.converter.MemberConverter;
@@ -14,7 +15,7 @@ import umc7.heehunjung.dto.member.MemberResponseDTO.MemberMissionDto;
 import umc7.heehunjung.repository.MemberMissionRepository;
 import umc7.heehunjung.repository.MemberRepository;
 import umc7.heehunjung.repository.MissionRepository;
-
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class MemberCommandServiceImpl implements MemberCommandService {
@@ -28,6 +29,7 @@ public class MemberCommandServiceImpl implements MemberCommandService {
     public void joinMember(MemberRequestDTO.JoinDto request){
         Member newMember = MemberConverter.toMember(request);
         newMember.encodePassword(passwordEncoder.encode(request.getPassword()));
+        log.info(newMember.getPassword());
         memberRepository.save(newMember);
     }
 

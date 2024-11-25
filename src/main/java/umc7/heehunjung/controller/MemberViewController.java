@@ -31,12 +31,12 @@ public class MemberViewController {
         }
 
         try {
-            memberCommandService.joinMember(request);
-            return "redirect:/login";
+        memberCommandService.joinMember(request);
+        return "redirect:/login";
         } catch (Exception e) {
             // 회원가입 과정에서 에러가 발생할 경우 에러 메시지를 보내고, signup 페이디를 유지합니다.
             model.addAttribute("error", e.getMessage());
-            log.info(e.getMessage());
+            log.info("회원가입: " + e.getMessage());
             return "signup";
         }
     }

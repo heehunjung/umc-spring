@@ -39,10 +39,10 @@ public class Member extends BaseEntity {
     @Column(nullable = false, length = 20)
     private String address;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false)
     private String userId;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
